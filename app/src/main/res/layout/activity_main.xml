@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--   <Button-->
+<!--       android:layout_width="80dp"-->
+<!--       android:layout_height="30dp"-->
+<!--       android:id="@+id/force_lineOut"-->
+<!--       android:text="注销"-->
+<!--       android:textSize="10sp"-->
+<!--       android:textColor="#000"-->
+<!--       android:gravity="center"-->
+<!--       android:layout_alignParentRight="true"-->
+<!--       android:background="@drawable/shape_button"/>-->
+
+  <androidx.viewpager.widget.ViewPager
+      android:id="@+id/fragment_viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/linear"
+     >
+  </androidx.viewpager.widget.ViewPager>
+
+   <LinearLayout
+      android:id="@+id/linear"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal">
+
+      <Button
+         android:id="@+id/btn_article"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="文章"
+          android:textColor="#000"
+          android:layout_weight="1">
+      </Button>
+      <Button
+          android:id="@+id/bt_image"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textColor="#000"
+          android:layout_marginLeft="3dp"
+          android:layout_marginRight="3dp"
+          android:text="图片">
+      </Button>
+      <Button
+          android:id="@+id/btn_myself"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textColor="#000"
+          android:text="我的">
+      </Button>
+
+   </LinearLayout>
+
+
+
+</RelativeLayout>

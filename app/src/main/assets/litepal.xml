@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+<!--    数据库名-->
+    <dbname value="ImageApp"></dbname>
+<!--    数据库版本-->
+    <version value="1"></version>
+<!--    配置的映射类-->
+    <list>
+<!--  请使用完整的类名      -->
+        <mapping class="com.wt.loginactivity.bean.User"></mapping>
+        <mapping class="com.wt.loginactivity.bean.Image"></mapping>
+    </list>
+</litepal>
